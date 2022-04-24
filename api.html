@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API's HTML</title>
+</head>
+<body>
+    
+    <div>
+        <p>Choose your file</p>
+        <input type="file" id="fileVideo" name="videoElegido" accept=".mp4">
+        <figure>
+        <video id="video" controls width="620" accept=".webm,.mp4,.ogv"></video>
+        </figure>
+    </div>
+    
+    <div class="buttons">
+        <button onclick="document.getElementById('video').play()">Play</button>
+        <button onclick="document.getElementById('video').pause()">Pause</button>
+        <button onclick="document.getElementById('video').vol += 0.1">+ Vol</button>
+        <button onclick="document.getElementById('video').vol -= 0.1">- Vol</button>
+        <button onclick="document.getElementById('video').muted = true">Mute</button>
+        <button onclick="document.getElementById('video').muted = false">Unmute</button>
+    </div>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
